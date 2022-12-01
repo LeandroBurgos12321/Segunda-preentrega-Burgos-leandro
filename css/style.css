@@ -14,8 +14,9 @@ align-items: center;
 .nav  {
    grid-area: nav;
    justify-content: space-evenly;
-align-items: center;
-height: 100%;
+   align-items: center;
+   height: 100%;
+   margin-top: 3rem;
 }
 
 
@@ -36,11 +37,6 @@ align-items: center;
 .pie{
  background-color: #314652;
  grid-area: footer;
-}
-
-nav {
-    margin-top: 3rem;
-
 }
 
 html {
@@ -238,5 +234,4 @@ margin-top: 5px;
         flex: 100%;
    
     }
-
 }
