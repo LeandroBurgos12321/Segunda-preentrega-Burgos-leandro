@@ -1,14 +1,19 @@
+@import "variables";
+@import "contacto";
+
+
 *{ 
+
     margin: '0';
     padding: 0%;
 }
 .encabezado{
     background-color:gray;
-grid-area: header;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav  {
@@ -22,21 +27,21 @@ align-items: center;
 
 .contenido {
     background-color: #314652;
-grid-area: main;
+    grid-area: main;
 }
 
 .publicidad {
     background-color:green ;
-grid-area: aside;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+    grid-area: aside;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .pie{
- background-color: #314652;
- grid-area: footer;
+    background-color: #314652;
+    grid-area: footer;
 }
 
 html {
@@ -49,20 +54,19 @@ html {
    color: black;
    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
    /*declarar columnas*/
-grid-template-columns: 1fr 1fr 1fr ;
+   grid-template-columns: 1fr 1fr 1fr ;
    /*declarar filas*/
-grid-template-rows: 250px 100px auto 150px;
-grid-template-areas:
+   grid-template-rows: 250px 100px auto 150px;
+   grid-template-areas:
 "header header header"
 "nav nav nav"
 "main main asaid"
 "footer footer footer"
-
 ;
 }
 
 body { 
-    background-color: black;
+    background-color: $bg-body;
 }
 
 ul {
@@ -75,8 +79,8 @@ ul {
     display: inline;
     font-size: 1.8rem;
     justify-content: space-evenly;
-align-items: center;
-height: 100%;
+    align-items: center;
+    height: 100%;
 
 }
 
@@ -85,9 +89,9 @@ a {
     
 }
 .lista-navegacion li a {
-color: blueviolet;
-background:none;
-padding: 20px;
+     color: blueviolet;
+    background:none;
+    padding: 20px;
 }
 
 
@@ -101,9 +105,9 @@ padding: 20px;
 
 
 h1{  
- color: yellowgreen;
- font-family: 'Roboto', sans-serif;
- font-size: 3rem;
+    color: yellowgreen;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem;
     margin-top: 3rem;
  
 }
@@ -123,50 +127,42 @@ h4{
 p {
     font-family: 'Montserrat', sans-serif;
     color: white;
-font-size: 1.8rem;
-margin: 3rem;
+    font-size: 1.8rem;
+    margin: 3rem;
 }
 
 #formulario {
-
     background-color: burlywood;
     font-size: 1.4rem;
 }
 
 #texto-contacto {
-background-color: none;
+    background-color: none;
 }
 
 /*menu de navegacion flex*/
 #header-flex {
-display: flex;
-justify-content: space-around;
-
-
+    display: flex;
+    justify-content: space-around;
 }
 
 #header-flex img{
-width: 80px;
+width: 100px;
 }  
 
 .lista-navegacion_flex{
       display: flex;
-gap: 1.5rem;
-align-items: center;
+      gap: 1.5rem;
+      align-items: center;
+      justify-content: space-evenly;
 }   
 
 .lista-navegacion_flex li {
-
     font-size: 1.8rem;
 } 
-
-
 footer{
-
     justify-content: center;
     align-items: center;
-    
-
 }
 
 .buttons {
@@ -195,7 +191,7 @@ footer{
 
 
   img{
-      width: 50% ;
+     width: 50% ;
 }
 
 .row {
@@ -208,13 +204,13 @@ footer{
 }
 
 .column  {
-        flex: 25%;
-        padding: 5px;
+    flex: 25%;
+    padding: 5px;
 
 }
 
 .column img {
-margin-top: 5px;
+    margin-top: 5px;
 
 }
 
@@ -235,4 +231,3 @@ margin-top: 5px;
    
     }
 }
-
